@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universidades del Estado de México</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2ffe6;
+}
+
+header{
+    background:#98d83e;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#7cb518;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+section{
+    padding:20px;
+}
+
+.intro{
+    background:white;
+    margin:20px;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.universidad{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.universidad h3{
+    color:#4f7d1f;
+}
+
+button{
+    background:#98d83e;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#7cb518;
+}
+
+.info{
+    display:none;
+    margin-top:15px;
+}
+
+.videos, .galeria{
+    background:white;
+    margin:20px;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    margin:10px;
+    border-radius:10px;
+}
+
+footer{
+    background:#98d83e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function mostrarInfo(id){
+    let elemento = document.getElementById(id);
+
+    if(elemento.style.display==="block"){
+        elemento.style.display="none";
+    }else{
+        elemento.style.display="block";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<header>
+    <h1>Universidades del Estado de México</h1>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#universidades">Universidades</a>
+    <a href="#videos">Videos</a>
+    <a href="#galeria">Galería</a>
+</nav>
+
+<section id="inicio" class="intro">
+    <h2>Introducción</h2>
+    <br>
+    <p>
+        Esta página web fue diseñada para proporcionar información sobre
+        algunas de las principales universidades del Estado de México.
+        Aquí podrás conocer sus programas académicos, requisitos de admisión,
+        categoría y ubicación.
+    </p>
+</section>
+
+<section id="universidades">
+
+<div class="universidad">
+<h3>1. Universidad Autónoma del Estado de México (UAEMéx)</h3>
+<button onclick="mostrarInfo('u1')">Ver información</button>
+<div class="info" id="u1">
+<p><b>Programas:</b> Medicina, Derecho, Ingeniería y Arquitectura.</p>
+<p><b>Requisitos:</b> Examen de admisión y certificado de bachillerato.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>2. Tecnológico de Estudios Superiores de Ecatepec</h3>
+<button onclick="mostrarInfo('u2')">Ver información</button>
+<div class="info" id="u2">
+<p><b>Programas:</b> Sistemas Computacionales e Ingeniería Industrial.</p>
+<p><b>Requisitos:</b> Examen de ingreso.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>3. Universidad Tecnológica de Nezahualcóyotl</h3>
+<button onclick="mostrarInfo('u3')">Ver información</button>
+<div class="info" id="u3">
+<p><b>Programas:</b> Mecatrónica y Tecnologías de la Información.</p>
+<p><b>Requisitos:</b> Certificado de bachillerato.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>4. Universidad Mexiquense del Bicentenario</h3>
+<button onclick="mostrarInfo('u4')">Ver información</button>
+<div class="info" id="u4">
+<p><b>Programas:</b> Administración e Informática.</p>
+<p><b>Requisitos:</b> Documentación básica.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>5. Universidad Autónoma Chapingo</h3>
+<button onclick="mostrarInfo('u5')">Ver información</button>
+<div class="info" id="u5">
+<p><b>Programas:</b> Agronomía y Recursos Naturales.</p>
+<p><b>Requisitos:</b> Examen de admisión.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>6. Universidad Tecnológica del Valle de Toluca</h3>
+<button onclick="mostrarInfo('u6')">Ver información</button>
+<div class="info" id="u6">
+<p><b>Programas:</b> Gastronomía y Mecatrónica.</p>
+<p><b>Requisitos:</b> Certificado y documentos.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>7. Universidad del Valle de México (UVM)</h3>
+<button onclick="mostrarInfo('u7')">Ver información</button>
+<div class="info" id="u7">
+<p><b>Programas:</b> Medicina, Arquitectura e Ingeniería.</p>
+<p><b>Requisitos:</b> Solicitud de ingreso.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>8. Universidad Anáhuac</h3>
+<button onclick="mostrarInfo('u8')">Ver información</button>
+<div class="info" id="u8">
+<p><b>Programas:</b> Medicina, Derecho y Negocios.</p>
+<p><b>Requisitos:</b> Examen y entrevista.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>9. TecMilenio</h3>
+<button onclick="mostrarInfo('u9')">Ver información</button>
+<div class="info" id="u9">
+<p><b>Programas:</b> Ingeniería, Negocios y Psicología.</p>
+<p><b>Requisitos:</b> Certificado de estudios.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>10. Universidad ETAC</h3>
+<button onclick="mostrarInfo('u10')">Ver información</button>
+<div class="info" id="u10">
+<p><b>Programas:</b> Derecho y Pedagogía.</p>
+<p><b>Requisitos:</b> Documentos oficiales.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>11. Universidad Insurgentes</h3>
+<button onclick="mostrarInfo('u11')">Ver información</button>
+<div class="info" id="u11">
+<p><b>Programas:</b> Administración y Mercadotecnia.</p>
+<p><b>Requisitos:</b> Acta y certificado.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>12. Universidad Tecnológica de Tecámac</h3>
+<button onclick="mostrarInfo('u12')">Ver información</button>
+<div class="info" id="u12">
+<p><b>Programas:</b> Ingeniería y Administración.</p>
+<p><b>Requisitos:</b> Examen de ingreso.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+</section>
+
+<section id="videos" class="videos">
+<h2>Videos Informativos</h2>
+<br>
+
+<div class="video-container">
+
+<video width="450" controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+
+<video width="450" controls>
+<source src="video2.mp4" type="video/mp4">
+</video>
+
+</div>
+</section>
+
+<section id="galeria" class="galeria">
+<h2>Galería de Universidades</h2>
+
+<img src="img1.jpg" alt="Imagen 1">
+<img src="img2.jpg" alt="Imagen 2">
+<img src="img3.jpg" alt="Imagen 3">
+<img src="img4.jpg" alt="Imagen 4">
+<img src="img5.jpg" alt="Imagen 5">
+
+</section>
+
+<footer>
+<p>Proyecto Escolar - Universidades del Estado de México © 2025</p>
+</footer>
+
+</body>
+</html>
