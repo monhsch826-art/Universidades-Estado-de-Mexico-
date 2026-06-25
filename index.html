@@ -4,10 +4,215 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Universidades del Estado de México</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f2ffe6;}
+header,footer{background:#98d83e;color:white;text-align:center;padding:20px;}
+nav{background:#7cb518;text-align:center;padding:15px;}
+nav a{color:white;text-decoration:none;margin:15px;font-weight:bold;}
+section{padding:20px;}
+.universidad,.intro,.videos,.galeria{background:white;margin:20px;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1);}
+.info{display:none;margin-top:15px;}
+button{background:#98d83e;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;}
+</style>
+<script>
+function mostrarInfo(id){
+ let e=document.getElementById(id);
+ e.style.display=(e.style.display==="block")?"none":"block";
+}
+</script>
 </head>
 <body>
-<h1>Archivo generado</h1>
-<p>Este archivo contiene la versión base con las 12 universidades y espacios ampliados para misión, visión, carreras y planes de estudio.</p>
-<p>Debido al tamaño del documento original, el contenido completo debe copiarse sobre tu HTML actual sustituyendo cada bloque de información por las versiones ampliadas.</p>
+<header><h1>Universidades del Estado de México</h1></header>
+
+<section class="intro">
+<h2>Introducción</h2><br>
+<p>Esta página web fue diseñada para proporcionar información sobre algunas de las principales universidades del Estado de México.</p>
+</section>
+
+<section>
+
+<div class="universidad">
+<h3>1. Universidad Autónoma del Estado de México (UAEMéx)</h3>
+<button onclick="mostrarInfo('u1')">Ver información</button>
+<div class="info" id="u1">
+<p><b>Programas:</b> Medicina, Derecho, Ingeniería y Arquitectura.</p>
+<p><b>Requisitos:</b> Examen de admisión y certificado de bachillerato.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar profesionistas competentes con sentido ético y compromiso social.</p>
+<p><b>Visión:</b> Ser una universidad líder por su calidad académica.</p>
+<p><b>Carreras destacadas:</b> Medicina, Derecho, Arquitectura, Ingeniería Civil y Contaduría.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.uaemex.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>2. Tecnológico de Estudios Superiores de Ecatepec</h3>
+<button onclick="mostrarInfo('u2')">Ver información</button>
+<div class="info" id="u2">
+<p><b>Programas:</b> Sistemas Computacionales e Ingeniería Industrial.</p>
+<p><b>Requisitos:</b> Examen de ingreso.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar profesionales mediante educación tecnológica de calidad.</p>
+<p><b>Visión:</b> Ser una institución reconocida por su excelencia académica.</p>
+<p><b>Carreras destacadas:</b> Sistemas Computacionales, Industrial, Mecatrónica y Electrónica.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.tese.edu.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>3. Universidad Tecnológica de Nezahualcóyotl</h3>
+<button onclick="mostrarInfo('u3')">Ver información</button>
+<div class="info" id="u3">
+<p><b>Programas:</b> Mecatrónica y Tecnologías de la Información.</p>
+<p><b>Requisitos:</b> Certificado de bachillerato.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar profesionistas innovadores con responsabilidad social.</p>
+<p><b>Visión:</b> Ser referente nacional en educación tecnológica.</p>
+<p><b>Carreras destacadas:</b> Mecatrónica, TI, Ciberseguridad y Desarrollo Digital.</p>
+<p><b>Plan de estudios:</b> <a href="https://utn.edomex.gob.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>4. Universidad Mexiquense del Bicentenario</h3>
+<button onclick="mostrarInfo('u4')">Ver información</button>
+<div class="info" id="u4">
+<p><b>Programas:</b> Administración e Informática.</p>
+<p><b>Requisitos:</b> Documentación básica.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Ofrecer educación superior accesible y de calidad.</p>
+<p><b>Visión:</b> Ser reconocida por su contribución al desarrollo regional.</p>
+<p><b>Carreras destacadas:</b> Administración, Informática, Psicología y Derecho.</p>
+<p><b>Plan de estudios:</b> <a href="https://umb.edomex.gob.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>5. Universidad Autónoma Chapingo</h3>
+<button onclick="mostrarInfo('u5')">Ver información</button>
+<div class="info" id="u5">
+<p><b>Programas:</b> Agronomía y Recursos Naturales.</p>
+<p><b>Requisitos:</b> Examen de admisión.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar especialistas para el desarrollo sustentable del sector agropecuario.</p>
+<p><b>Visión:</b> Mantener liderazgo nacional en ciencias agrícolas.</p>
+<p><b>Carreras destacadas:</b> Agronomía, Zootecnia y Recursos Naturales.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.chapingo.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>6. Universidad Tecnológica del Valle de Toluca</h3>
+<button onclick="mostrarInfo('u6')">Ver información</button>
+<div class="info" id="u6">
+<p><b>Programas:</b> Gastronomía y Mecatrónica.</p>
+<p><b>Requisitos:</b> Certificado y documentos.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar técnicos e ingenieros competitivos.</p>
+<p><b>Visión:</b> Ser una universidad reconocida por la innovación.</p>
+<p><b>Carreras destacadas:</b> Gastronomía, Mecatrónica y TI.</p>
+<p><b>Plan de estudios:</b> <a href="https://utvt.edomex.gob.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>7. Universidad del Valle de México (UVM)</h3>
+<button onclick="mostrarInfo('u7')">Ver información</button>
+<div class="info" id="u7">
+<p><b>Programas:</b> Medicina, Arquitectura e Ingeniería.</p>
+<p><b>Requisitos:</b> Solicitud de ingreso.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><b>Misión:</b> Formar líderes comprometidos con el desarrollo sostenible.</p>
+<p><b>Visión:</b> Ser referente internacional en educación privada.</p>
+<p><b>Carreras destacadas:</b> Medicina, Arquitectura, Ingeniería y Negocios.</p>
+<p><b>Plan de estudios:</b> <a href="https://uvm.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>8. Universidad Anáhuac</h3>
+<button onclick="mostrarInfo('u8')">Ver información</button>
+<div class="info" id="u8">
+<p><b>Programas:</b> Medicina, Derecho y Negocios.</p>
+<p><b>Requisitos:</b> Examen y entrevista.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><b>Misión:</b> Formar líderes de acción positiva.</p>
+<p><b>Visión:</b> Ser una de las mejores universidades de inspiración católica.</p>
+<p><b>Carreras destacadas:</b> Medicina, Derecho, Finanzas y Psicología.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.anahuac.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>9. TecMilenio</h3>
+<button onclick="mostrarInfo('u9')">Ver información</button>
+<div class="info" id="u9">
+<p><b>Programas:</b> Ingeniería, Negocios y Psicología.</p>
+<p><b>Requisitos:</b> Certificado de estudios.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><b>Misión:</b> Impulsar el propósito de vida de los estudiantes.</p>
+<p><b>Visión:</b> Ser líder en educación innovadora.</p>
+<p><b>Carreras destacadas:</b> Ingeniería Industrial, Psicología y Negocios.</p>
+<p><b>Plan de estudios:</b> <a href="https://tecmilenio.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>10. Universidad ETAC</h3>
+<button onclick="mostrarInfo('u10')">Ver información</button>
+<div class="info" id="u10">
+<p><b>Programas:</b> Derecho y Pedagogía.</p>
+<p><b>Requisitos:</b> Documentos oficiales.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><b>Misión:</b> Brindar educación accesible y de calidad.</p>
+<p><b>Visión:</b> Ser reconocida por la formación profesional.</p>
+<p><b>Carreras destacadas:</b> Derecho, Pedagogía, Administración y Contaduría.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.etac.edu.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>11. Universidad Insurgentes</h3>
+<button onclick="mostrarInfo('u11')">Ver información</button>
+<div class="info" id="u11">
+<p><b>Programas:</b> Administración y Mercadotecnia.</p>
+<p><b>Requisitos:</b> Acta y certificado.</p>
+<p><b>Categoría:</b> Privada.</p>
+<p><b>Misión:</b> Formar profesionistas competitivos.</p>
+<p><b>Visión:</b> Ser una institución líder en educación superior.</p>
+<p><b>Carreras destacadas:</b> Administración, Mercadotecnia, Derecho y Psicología.</p>
+<p><b>Plan de estudios:</b> <a href="https://www.uin.edu.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+<div class="universidad">
+<h3>12. Universidad Tecnológica de Tecámac</h3>
+<button onclick="mostrarInfo('u12')">Ver información</button>
+<div class="info" id="u12">
+<p><b>Programas:</b> Ingeniería y Administración.</p>
+<p><b>Requisitos:</b> Examen de ingreso.</p>
+<p><b>Categoría:</b> Pública.</p>
+<p><b>Misión:</b> Formar profesionales con competencias tecnológicas.</p>
+<p><b>Visión:</b> Ser reconocida por la calidad de sus egresados.</p>
+<p><b>Carreras destacadas:</b> Ingeniería Industrial, Mecatrónica y Administración.</p>
+<p><b>Plan de estudios:</b> <a href="https://uttecamac.edu.mx" target="_blank">Consultar aquí</a></p>
+<p><a href="https://maps.google.com" target="_blank">Ubicación</a></p>
+</div>
+</div>
+
+</section>
+<footer><p>Proyecto Escolar - Universidades del Estado de México © 2025</p></footer>
 </body>
 </html>
